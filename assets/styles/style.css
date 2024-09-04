@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Montserrat;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.hastag {
+    background-color: rgb(222, 222, 222);
+    color: grey;
+    border-radius: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+h2 {
+    color: royalblue;
+    margin-bottom: 5px;
+}
+
+.namaku {
+    margin-left: 50px;
+    margin-top: -44px;
+}
+
+h4 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.verified {
+    width: 15px;
+    margin-left: 5px;
+}
+
+.img-ramdani {
+    border-radius: 100%;
+    width: 40px;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+}
+.featured-image {
+    width: 80%;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.tentangku {
+    margin-top: 20px;
+}
+
+#content {
+    display: flex;
+    flex: 5;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    gap: 1.5rem;
+}
+
+.profile header {
+    text-align: center;
+}
+.profile img {
+    width: 200px;
+    border-radius: 20px;
+}
+
+header {
+    display: inline;
+}
+header .jumbotron {
+    color: white;
+    background-color: royalblue;
+    text-align: center;
+    padding: 60px;
+    font-size: 20px;
+}
+header .jumbotron-namaku {
+    color: white;
+    background-color: rgb(50, 80, 180);
+    border-radius: 10px 50px 50px 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+header .jumbotron .ku {
+    text-decoration: underline;
+    animation: ku 2s infinite;
+}
+@keyframes ku {
+    0% {
+        text-decoration: underline;
+    }
+    50% {
+        text-decoration: none;
+    }
+    100% {
+        text-decoration: underline;
+    }
+}
+header nav {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    overflow: auto;
+}
+header nav ul {
+    display: flex;
+}
+header nav li {
+    list-style-type: none;
+    padding: 20px;
+    margin-left: -15px;
+}
+header nav a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+header nav a:hover {
+    background-color: transparent;
+    border-bottom: 2px solid white;
+}
+
+
+aside {
+    flex: 1;
+}
+
+.card {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section table th a {
+    color: royalblue;
+    text-align: left;
+    text-decoration: none;
+}
+section table th a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    color: white;
+    background-color: #282D34;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column wrap;
+    }
+    main aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    main aside {
+        align-self: stretch;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header .jumbotron-namaku {
+        font-size: 40px;
+    }
+}
