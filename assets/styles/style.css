@@ -1,185 +1,206 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
 }
 
-body {
-    font-family: Montserrat;
+html {
+    scroll-behavior: smooth;
+}
+main article #ramdani, #film, #musik, #makanan, #minuman, #game {
+    scroll-margin-top: 2rem;
 }
 
-p {
-    line-height: 1.5;
-}
-
-.hastag {
-    background-color: rgb(222, 222, 222);
-    color: grey;
-    border-radius: 2px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-h2 {
-    color: royalblue;
-    margin-bottom: 5px;
-}
-
-.namaku {
-    margin-left: 50px;
-    margin-top: -44px;
-}
-
-h4 {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-.verified {
-    width: 15px;
-    margin-left: 5px;
-}
-
-.img-ramdani {
-    border-radius: 100%;
-    width: 40px;
-    margin-bottom: 10px;
-    flex-shrink: 0;
-}
-.featured-image {
-    width: 80%;
-    border-radius: 10px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
-
-.tentangku {
-    margin-top: 20px;
-}
-
-#content {
-    display: flex;
-    flex: 5;
-    flex-flow: column nowrap;
-    gap: 1rem 2rem;
-}
-
-main {
-    display: flex;
-    padding: 20px;
-    gap: 1.5rem;
-}
-
-.profile header {
-    text-align: center;
-}
-.profile img {
-    width: 200px;
-    border-radius: 20px;
-}
-
-header {
-    display: inline;
-}
+/* HEADER */
+/* HEADER | JUMBOTRON */
 header .jumbotron {
-    color: white;
-    background-color: royalblue;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
     text-align: center;
-    padding: 60px;
-    font-size: 20px;
+    background-color: royalblue;
 }
-header .jumbotron-namaku {
+
+header .jumbotron h1 {
+    padding: 0 1rem;
+    display: inline;
+    font-size: clamp(2rem, 5vw, 3rem);
     color: white;
-    background-color: rgb(50, 80, 180);
-    border-radius: 10px 50px 50px 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    background-color: #3250B4;
+    border-radius: 10px 100px 100px 10px;
 }
-header .jumbotron .ku {
-    text-decoration: underline;
-    animation: ku 2s infinite;
+
+header .jumbotron p {
+    font-size: clamp(1.2rem, 5vw, 1.5rem);
+    color: white;
 }
-@keyframes ku {
-    0% {
-        text-decoration: underline;
-    }
-    50% {
-        text-decoration: none;
-    }
-    100% {
-        text-decoration: underline;
-    }
+header .jumbotron span {
+    border-bottom: 1.5px solid white;
 }
+
+/* HEADER | NAVBAR */
 header nav {
-    background-color: black;
-    position: sticky;
     top: 0;
+    position: sticky;
+    padding: 1.5rem;
+    background-color: black;
     overflow: auto;
 }
+
 header nav ul {
     display: flex;
+    gap: 2rem;
 }
-header nav li {
-    list-style-type: none;
-    padding: 20px;
-    margin-left: -15px;
+header nav ul li {
+    list-style: none;
 }
-header nav a {
-    text-decoration: none;
+
+header nav ul li a {
+    padding: 1rem .5rem;
     color: white;
-    padding: 15px;
+    text-decoration: none;
 }
-header nav a:hover {
-    background-color: transparent;
+header nav ul li a:hover {
     border-bottom: 2px solid white;
 }
 
-
-aside {
-    flex: 1;
+/* MAIN */
+main {
+    margin: 2rem;
+    display: flex;
+    gap: 2rem;
 }
 
-.card {
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* MAIN | ARTICLE - RAMDANI */
+main article .ramdani .ramdani-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
-section table th a {
-    color: royalblue;
-    text-align: left;
-    text-decoration: none;
-}
-section table th a:hover {
-    text-decoration: underline;
+main article .ramdani .ramdani-profile img {
+    width: 5rem;
+    border-radius: 100%;
+    box-shadow: 0 4px 10px #00000022;
 }
 
-footer {
+main article .ramdani .ramdani-profile h3 {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    font-size: 1.4rem;
+}
+main article .ramdani .ramdani-profile h3 svg {
+    fill: royalblue;
+}
+
+/* MAIN | ARTICLE */
+main article {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main article .content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: white;
+    box-shadow: 0 4px 8px #00000022;
+    border-radius: 1rem;
+}
+
+main article .content h2 {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+main article .content .hastag {
+    padding: .3rem .8rem;
+    display: flex;
+    align-items: center;
     color: white;
-    background-color: #282D34;
-    padding: 20px;
+    background-color: #3250B4;
+    border-radius: 8rem 100px 100px 4rem;
+}
+main article .content .hastag svg {
+    fill: skyblue;
+}
+
+main article .content img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+main article .content p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* MAIN | ASIDE */
+main aside {
+    width: 30%;
+}
+
+main aside .content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    background-color: white;
+    box-shadow: 0 4px 8px #00000022;
+    border-radius: 1rem;
+}
+
+main aside .content h3 {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    font-size: 1.4rem;
+}
+main aside .content h3 svg {
+    fill: royalblue;
+}
+
+main aside .content p {
+    font-size: 1.1rem;
+}
+
+main aside .content img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+/* FOOTER */
+footer {
+    padding: 2rem;
+    color: white;
+    background-color: black;
     text-align: center;
 }
 
-@media screen and (max-width: 1200px) {
+/* RESPONSIVE BREAKPOINTS */
+
+@media (max-width: 576px) {
     main {
-        flex-flow: column wrap;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
     }
-    main aside {
-        align-self: center;
-    }
-}
 
-@media screen and (max-width: 1100px) {
-    main aside {
-        align-self: stretch;
+    /* MAIN | ARTICLE */
+    main article {
+        width: 100%;
     }
-}
 
-@media screen and (max-width: 800px) {
-    header .jumbotron-namaku {
-        font-size: 40px;
+    /* MAIN | ASIDE */
+    main aside {
+        width: 100%;
     }
 }
