@@ -9,12 +9,11 @@ html {
     scroll-behavior: smooth;
 }
 main article #ramdani, #film, #musik, #makanan, #minuman, #game {
-    scroll-margin-top: 2rem;
+    scroll-margin-top: 6rem;
 }
 
 /* HEADER */
-/* HEADER | JUMBOTRON */
-header .jumbotron {
+header {
     padding: 5rem;
     display: flex;
     flex-direction: column;
@@ -24,7 +23,7 @@ header .jumbotron {
     background-color: royalblue;
 }
 
-header .jumbotron h1 {
+header h1 {
     padding: 0 1rem;
     display: inline;
     font-size: clamp(2rem, 5vw, 3rem);
@@ -33,16 +32,16 @@ header .jumbotron h1 {
     border-radius: 10px 100px 100px 10px;
 }
 
-header .jumbotron p {
+header p {
     font-size: clamp(1.2rem, 5vw, 1.5rem);
     color: white;
 }
-header .jumbotron span {
+header span {
     border-bottom: 1.5px solid white;
 }
 
-/* HEADER | NAVBAR */
-header nav {
+/* NAVBAR */
+nav {
     top: 0;
     position: sticky;
     padding: 1.5rem;
@@ -50,20 +49,20 @@ header nav {
     overflow: auto;
 }
 
-header nav ul {
+nav ul {
     display: flex;
     gap: 2rem;
 }
-header nav ul li {
+nav ul li {
     list-style: none;
 }
 
-header nav ul li a {
+nav ul li a {
     padding: 1rem .5rem;
     color: white;
     text-decoration: none;
 }
-header nav ul li a:hover {
+nav ul li a:hover {
     border-bottom: 2px solid white;
 }
 
