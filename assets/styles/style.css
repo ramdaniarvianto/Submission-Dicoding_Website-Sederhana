@@ -26,7 +26,7 @@ header {
 header h1 {
     padding: 0 1rem;
     display: inline;
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(1.8rem, 5vw, 3rem);
     color: white;
     background-color: #3250B4;
     border-radius: 10px 100px 100px 10px;
@@ -187,6 +187,13 @@ footer {
 /* RESPONSIVE BREAKPOINTS */
 
 @media (max-width: 576px) {
+    /* HEADER */
+    header {
+        padding: 4rem;
+        display: flex;
+        gap: .2rem;
+    }
+    /* MAIN */
     main {
         margin: 1rem;
         display: flex;
