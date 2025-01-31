@@ -90,7 +90,7 @@ main article .ramdani .ramdani-profile h3 {
     display: flex;
     align-items: center;
     gap: .3rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 main article .ramdani .ramdani-profile h3 svg {
     fill: royalblue;
@@ -116,7 +116,7 @@ main article .content {
 }
 
 main article .content h2 {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 5vw, 2.5rem);
     line-height: 1;
 }
 
@@ -139,7 +139,6 @@ main article .content img {
 
 main article .content p {
     line-height: 1.6;
-    text-align: justify;
 }
 
 /* MAIN | ASIDE */
@@ -193,6 +192,7 @@ footer {
         display: flex;
         gap: .2rem;
     }
+
     /* MAIN */
     main {
         margin: 1rem;
@@ -205,8 +205,16 @@ footer {
         width: 100%;
     }
 
+    main article .content {
+        padding: 1.5rem;
+    }
+
     /* MAIN | ASIDE */
     main aside {
         width: 100%;
+    }
+
+    main aside .content {
+        padding: 1.5rem;
     }
 }
