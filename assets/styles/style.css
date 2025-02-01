@@ -193,6 +193,11 @@ footer {
         gap: .2rem;
     }
 
+    /* NAVBAR */
+    nav {
+        padding: 1.5rem 0;
+    }
+
     /* MAIN */
     main {
         margin: 1rem;
