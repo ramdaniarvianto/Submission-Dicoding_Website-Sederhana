@@ -224,9 +224,7 @@ footer strong > a {
         gap: 4rem;
     }
 
-    main .article-wrap, main .aside-wrap {
-        padding: 1rem;
-    }
+    main .article-wrap, main .aside-wrap {padding: 1rem;}
 
     main article, main aside {width: 100%;}
 
