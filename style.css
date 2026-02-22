@@ -39,7 +39,53 @@ header .head-text p {
     gap: 4px;
 }
 
+@keyframes RainbowText {
+    0% {
+        background: linear-gradient(to right, orange, yellow, green, blue, indigo, violet, red);
+        background-clip: text;
+        color: transparent;
+        text-shadow: 0 0 0 #61626388;
+        text-decoration: none;
+    }
+    10% {
+        background: linear-gradient(to right, yellow, green, blue, indigo, violet, red, orange);
+        background-clip: text;
+        color: transparent;
+        text-shadow: 0 0 0 #61626388;
+        text-decoration: none;
+    }
+    25% {
+        background: linear-gradient(to right, green, blue, indigo, violet, red, orange, yellow);
+        background-clip: text;
+        color: transparent;
+        text-shadow: 0 0 0 #61626388;
+        text-decoration: none;
+    }
+    50% {
+        background: linear-gradient(to right, blue, indigo, violet, red, orange, yellow, green);
+        background-clip: text;
+        color: transparent;
+        text-shadow: 0 0 0 #61626388;
+        text-decoration: none;
+    }
+    75% {
+        background: linear-gradient(to right, indigo, violet, red, orange, yellow, green, blue);
+        background-clip: text;
+        color: transparent;
+        text-shadow: 0 0 0 #61626388;
+        text-decoration: none;
+    }
+    100% {
+        /* red, orange, yellow, green, blue, indigo, violet */
+        background: linear-gradient(to right, violet, red, orange, yellow, green, blue, indigo);
+        background-clip: text;
+        color: transparent;
+        text-shadow: 0 0 0 #61626388;
+        text-decoration: none;
+    }
+}
 header .head-text a {
+    animation: RainbowText 1s linear infinite;
     background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     background-clip: text;
     color: transparent;
