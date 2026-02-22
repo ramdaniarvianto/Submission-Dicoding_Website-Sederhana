@@ -76,7 +76,6 @@ header .head-text p {
         text-decoration: none;
     }
     100% {
-        /* red, orange, yellow, green, blue, indigo, violet */
         background: linear-gradient(to right, violet, red, orange, yellow, green, blue, indigo);
         background-clip: text;
         color: transparent;
